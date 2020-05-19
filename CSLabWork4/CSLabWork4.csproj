@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSLabWork4.A5Program</StartupObject>
+    <StartupObject>CSLabWork4.A2Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
