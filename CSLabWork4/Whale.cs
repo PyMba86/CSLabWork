@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace CSLabWork4
 {
-    class Program
+    class Whale : Cow
     {
-        static void Main(string[] args)
+        public override String getName()
         {
+            return "Я не корова, Я – кит";
         }
     }
 }
