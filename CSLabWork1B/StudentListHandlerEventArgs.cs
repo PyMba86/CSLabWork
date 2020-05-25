@@ -1,26 +1,26 @@
 ﻿using System;
 
-namespace CSLabWork1A
+namespace CSLabWork1B
 {
-    class TeamListEventArgs : EventArgs
+    class StudentListHandlerEventArgs : EventArgs
     {
         public string CollectionName { get; set; }
         public string ChangeType { get; set; }
-        public int NumberOfChangeItem { get; set; }
+        public Student ChangeItem { get; set; }
 
-        public TeamListEventArgs(string collectionName, string changeType, int numberOfChangeItem)
+        public StudentListHandlerEventArgs(string collectionName, string changeType, Student changeItem)
         {
             CollectionName = collectionName;
             ChangeType = changeType;
-            NumberOfChangeItem = numberOfChangeItem;
+            ChangeItem = changeItem;
         }
 
         public override string ToString()
         {
             return string.Format("Название коллекции: {0} \n" +
                                  "Тип изменения: {1} \n" +
-                                 "Номер элемента: {2} \n",
-                CollectionName, ChangeType, NumberOfChangeItem);
+                                 "Студент: {2} \n",
+                CollectionName, ChangeType, ChangeItem);
         }
     }
 }

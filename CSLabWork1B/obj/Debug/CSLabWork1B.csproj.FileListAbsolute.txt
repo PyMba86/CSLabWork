@@ -1,0 +1,6 @@
+C:\Users\PyMba86\Desktop\CSLabWork\CSLabWork1B\bin\Debug\CSLabWork1B.exe
+C:\Users\PyMba86\Desktop\CSLabWork\CSLabWork1B\bin\Debug\CSLabWork1B.pdb
+C:\Users\PyMba86\Desktop\CSLabWork\CSLabWork1B\obj\Debug\CSLabWork1B.csprojAssemblyReference.cache
+C:\Users\PyMba86\Desktop\CSLabWork\CSLabWork1B\obj\Debug\CSLabWork1B.csproj.CoreCompileInputs.cache
+C:\Users\PyMba86\Desktop\CSLabWork\CSLabWork1B\obj\Debug\CSLabWork1B.exe
+C:\Users\PyMba86\Desktop\CSLabWork\CSLabWork1B\obj\Debug\CSLabWork1B.pdb

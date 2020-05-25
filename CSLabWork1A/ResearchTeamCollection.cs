@@ -6,7 +6,7 @@ namespace CSLabWork1A
     {
         public string CollectionName { get; set; }
 
-        private List<ResearchTeam> SomeResearchTeams = new List<ResearchTeam>();
+        private List<ResearchTeam> ResearchTeams = new List<ResearchTeam>();
 
         public ResearchTeamCollection(string collectionName)
         {
@@ -18,10 +18,10 @@ namespace CSLabWork1A
             for (var i = 0; i < 3; i++)
             {
                 ResearchTeam team = new ResearchTeam();
-                SomeResearchTeams.Add(team);
+                ResearchTeams.Add(team);
                 ResearchTeamAdded(team, new TeamListEventArgs(
                     CollectionName, "Элемент добавлен в конец списка",
-                    SomeResearchTeams.Count - 1));
+                    ResearchTeams.Count - 1));
             }
         }
 
@@ -29,35 +29,40 @@ namespace CSLabWork1A
         {
             foreach (var team in additionalTeams)
             {
-                SomeResearchTeams.Add(team);
+                ResearchTeams.Add(team);
                 ResearchTeamAdded(team, new TeamListEventArgs(
                     CollectionName, "Элемент добавлен в конец списка",
-                    SomeResearchTeams.Count - 1));
+                    ResearchTeams.Count - 1));
             }
         }
 
         public void InsertAt(int j, ResearchTeam rt)
         {
-            if (SomeResearchTeams.Count < j)
+            if (ResearchTeams.Count < j)
             {
-                SomeResearchTeams.Add(rt);
+                ResearchTeams.Add(rt);
                 ResearchTeamAdded(rt, new TeamListEventArgs(
                     CollectionName, "Элемент добавлен в конец списка",
-                    SomeResearchTeams.Count - 1));
+                    ResearchTeams.Count - 1));
             }
             else
             {
-                for (var i = 0; i < SomeResearchTeams.Count; i++)
+                for (var i = 0; i < ResearchTeams.Count; i++)
                 {
                     if (i - 1 == j)
                     {
-                        SomeResearchTeams.Insert(i, rt);
-                        ResearchTeamInserted(SomeResearchTeams[i],
+                        ResearchTeams.Insert(i, rt);
+                        ResearchTeamInserted(ResearchTeams[i],
                             new TeamListEventArgs(CollectionName,
                                 "Элемент добавлен в список", j));
                     }
                 }
             }
+        }
+        
+        public ResearchTeam this[int index] {
+            get => ResearchTeams[index];
+            set => ResearchTeams[index] = value;
         }
 
         public delegate void TeamListHandler(object source, TeamListEventArgs args);

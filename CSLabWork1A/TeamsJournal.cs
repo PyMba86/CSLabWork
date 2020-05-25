@@ -17,7 +17,7 @@ namespace CSLabWork1A
             string str = "";
             foreach (var change in ListOfChanges)
             {
-                str += change.ToString() + "\n";
+                str += change + "\n";
             }
 
             return str;

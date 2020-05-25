@@ -1,16 +1,16 @@
-﻿namespace CSLabWork1A
+﻿namespace CSLabWork1B
 {
-    class TeamsJournalEntry
+    public class JournalEntry
     {
         public string CollectionName { get; set; }
         
         public string CollectionEvent { get; set; }
 
-        public int NumberOfElement;
+        public string Student;
 
-        public TeamsJournalEntry( string collectionName, string collectionEvent, int numberOfElement)
+        public JournalEntry(string collectionName, string collectionEvent, string student)
         {
-            NumberOfElement = numberOfElement;
+            Student = student;
             CollectionName = collectionName;
             CollectionEvent = collectionEvent;
         }
@@ -19,8 +19,8 @@
         {
             return string.Format("Название коллекции: {0} \n" +
                                  "Событие: {1} \n" +
-                                 "Номер элемента: {2} \n",
-                CollectionName, CollectionEvent, NumberOfElement);
+                                 "Студент: {2} \n",
+                CollectionName, CollectionEvent, Student);
         }
     }
 }
