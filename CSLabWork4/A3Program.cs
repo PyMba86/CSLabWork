@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSLabWork4
 {
@@ -15,11 +11,11 @@ namespace CSLabWork4
     {
         static void Main(string[] args)
         {
-            Cat cat = new Cat();
-            Cat childCat = cat.getChild();
+            Pet cat = new Cat();
+            Pet childCat = cat.getChild();
 
-            Dog dog = new Dog();
-            Dog childDog = dog.getChild();
+            Pet dog = new Dog();
+            Pet childDog = dog.getChild();
         }
     }
 }

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSLabWork4
 {
@@ -10,9 +6,9 @@ namespace CSLabWork4
      * Переопределить метод getName в классе Whale(Кит), чтобы программа выдавала:
      * Я не корова, Я – кит
      */
-    class A1Program
+    public class A1Program
     {
-        static void Main(string[] args)
+       public static void Main(string[] args)
         {
             Cow cow = new Whale();
 

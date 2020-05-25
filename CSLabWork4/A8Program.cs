@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSLabWork4
 {
@@ -15,17 +11,17 @@ namespace CSLabWork4
     {
         static int max(int a, int b)
         {
-            return (a > b) ? a : b;
+            return a > b ? a : b;
         }
 
         static long max(long a, long b)
         {
-            return (a > b) ? a : b;
+            return a > b ? a : b;
         }
 
         static double max(double a, double b)
         {
-            return (a > b) ? a : b;
+            return a > b ? a : b;
         }
    
         static void Main(string[] args)

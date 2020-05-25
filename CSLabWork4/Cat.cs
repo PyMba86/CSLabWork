@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSLabWork4
 {
-    class Cat
+    class Cat: Pet
     {
-        public Cat getChild()
+        public override Pet getChild()
         {
             return new Cat();
         }
