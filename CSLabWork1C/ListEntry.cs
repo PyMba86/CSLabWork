@@ -1,16 +1,16 @@
-﻿namespace CSLabWork1B
+﻿namespace CSLabWork1C
 {
-    class JournalEntry
+    public class ListEntry
     {
         public string CollectionName { get; set; }
         
         public string CollectionEvent { get; set; }
 
-        public string Student;
+        public int NumberOfElement;
 
-        public JournalEntry(string collectionName, string collectionEvent, string student)
+        public ListEntry( string collectionName, string collectionEvent, int numberOfElement)
         {
-            Student = student;
+            NumberOfElement = numberOfElement;
             CollectionName = collectionName;
             CollectionEvent = collectionEvent;
         }
@@ -19,8 +19,8 @@
         {
             return string.Format("Название коллекции: {0} \n" +
                                  "Событие: {1} \n" +
-                                 "Студент: {2} \n",
-                CollectionName, CollectionEvent, Student);
+                                 "Номер элемента: {2} \n",
+                CollectionName, CollectionEvent, NumberOfElement);
         }
     }
 }

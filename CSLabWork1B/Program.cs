@@ -2,7 +2,7 @@
 
 namespace CSLabWork1B
 {
-    internal class Program
+    class Program
     {
         public static void Main(string[] args)
         {
